@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginTop="30sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40sp"
+            android:text="Player X"
+            android:textSize="64dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="40sp"
+            android:layout_marginRight="40sp"
+            android:text="Player O"
+            android:textSize="64dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40sp">
+
+        <TextView
+            android:id="@+id/tvPointX"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70sp"
+            android:background="@drawable/textviewborder"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:textSize="64dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvPointO"
+            android:layout_width="160sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70sp"
+            android:background="@drawable/textviewborder"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:textSize="64dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70sp"
+        android:layout_marginTop="30sp">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textSize="48sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnNewGame"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:textSize="48sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutGameboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp"
+        android:orientation="vertical">
+    </LinearLayout>
+</LinearLayout>
